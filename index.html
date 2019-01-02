@@ -7,28 +7,22 @@
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <style type="text/css">
-        .photo {
-            width: 10vw;
-            height: 10vw;
-            border: 2px solid #d3d3d3;
-        }
-    </style>
+
 </head>
 
 <body>
     <!--navbar-->
     <nav class="navbar navbar-default">
         <div class="alert-container container-fluid clearblack hidden-xs">
-                <article>
-                    <div class="row hidden-xs">
-                        <div class="col-xs-12 text-center">
-                            <div class="alert alert-warning">
-                                <strong>Sale now on!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="#">See here for more details.</a>
-                            </div>
+            <article>
+                <div class="row hidden-xs">
+                    <div class="col-xs-12 text-center">
+                        <div class="alert alert-warning">
+                            <strong>Sale now on!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="#">See here for more details.</a>
                         </div>
                     </div>
-            </div>
+                </div>
+        </div>
         <div class="container-fluid">
             <!--Logo-->
             <div class="navbar-header">
@@ -47,7 +41,7 @@
             <!--Nav-->
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li class="visible-xs"><a href="#">Sign up</a></li>
                 </ul>
@@ -56,7 +50,7 @@
 
                 <!--Message-->
                 <div class="navbar-header navbar-right hidden-xs">
-                    <a href="/Login" class="btn btn-default navbar-btn">Sign up</a>
+                    <button class="btn btn-success navbar-btn" data-toggle="modal" data-target="#SignUpModal">Sign up!</button>
                     <p class="navbar-text"><i>Great whiskey delivered to your door</i></p>
                 </div>
             </div>
@@ -85,125 +79,133 @@
     <!-- /callout -->
 
     <!-- quotes -->
-    <div class="container">
-        <section class="quote">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-header">
-                        <h2 class="text-uppercase">Quotes:</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <img src="images/woman.jpg" class="img-circle media-object photo"></img>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="quote">
-                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                                <p>- Jane Doe</p>
-                            </blockquote>
+    <div class="container-wrapper">
+        <div class="container">
+            <section class="quote">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 class="text-uppercase">Quotes</h2>
+                            <hr class="content-divider">
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <img src="images/man.jpg" class="img-circle media-object photo"></img>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="media">
+                                <div class="media-left hidden-xs">
+                                    <img src="images/woman.jpg" class="img-circle media-object photo"></img>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="quote">
+                                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                                        <p>- Jane Doe</p>
+                                    </blockquote>
+                                </div>
+                            </div>
                         </div>
-                        <div class="media-body">
-                            <blockquote class="quote">
-                                *
-                                <p>I haven't been sober for months!</p>
-                                <p>- Joe Bloggs</p>
-                            </blockquote>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="media">
+                                <div class="media-left hidden-xs">
+                                    <img src="images/man.jpg" class="img-circle media-object photo"></img>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="quote">
+                                        <p>I haven't been sober for months!</p>
+                                        <p>- Joe Bloggs</p>
+                                    </blockquote>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </div>
     </div>
-    </section>
     <!-- /quotes -->
 
     <!-- features -->
-    <div class="container">
-        <section class="features">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="page-header">
-                        <h2 class="text-uppercase">Features</h2>
+    <div class="container-wrapper cnt-orng">
+        <div class="container">
+            <section class="features">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 class="text-uppercase">Features</h2>
+                            <hr class="content-divider">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="features">
-                        <h3><span class="glyphicon glyphicon-glass hidden-xs"></span> Feature 1 <span class="label label-success">New!</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quaerat vel, delectus porro commodi velit eius reiciendis animi quia itaque placeat perspiciatis provident aspernatur sed?</p>
-                        <p><button class="btn btn-sm btn-default">Read more.</button></p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="features">
+                            <h3><span class="glyphicon glyphicon-glass hidden-xs"></span> Feature 1 <span class="label label-success">New!</span></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quaerat vel, delectus porro commodi velit eius reiciendis animi quia itaque placeat perspiciatis provident aspernatur sed?</p>
+                            <p><button class="btn btn-sm btn-default">Read more.</button></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="feature">
+                            <h3><span class="glyphicon glyphicon-search hidden-xs"></span> Feature 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tenetur architecto, ex harum, repellendus, deserunt alias pariatur blanditiis vitae quae non numquam sit ratione quo.</p>
+                            <p><button class="btn btn-sm btn-default">Read more.</button></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hidden-md col-lg-4">
+                        <div class="feature">
+                            <h3><span class="glyphicon glyphicon-th hidden-xs"></span> Feature 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae accusantium, itaque laudantium ducimus amet, reprehenderit, repellendus similique officiis accusamus dicta sed dignissimos natus, voluptas!</p>
+                            <p><button class="btn btn-sm btn-default">Read more.</button></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3><span class="glyphicon glyphicon-search hidden-xs"></span> Feature 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tenetur architecto, ex harum, repellendus, deserunt alias pariatur blanditiis vitae quae non numquam sit ratione quo.</p>
-                        <p><button class="btn btn-sm btn-default">Read more.</button></p>
-                    </div>
-                </div>
-                <div class="col-xs-12 hidden-md col-lg-4">
-                    <div class="feature">
-                        <h3><span class="glyphicon glyphicon-th hidden-xs"></span> Feature 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae accusantium, itaque laudantium ducimus amet, reprehenderit, repellendus similique officiis accusamus dicta sed dignissimos natus, voluptas!</p>
-                        <p><button class="btn btn-sm btn-default">Read more.</button></p>
-                    </div>
-                </div>
-            </div>
+            </section>
+        </div>
     </div>
-    </section>
     <!-- /features -->
     <!--monthly favourites-->
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <section>
-                    <div>
-                        <div class="page-header">
-                            <h2 class="text-uppercase">Monthly Favourites</h2>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <section>
+                        <div>
+                            <div class="page-header">
+                                <h2 class="text-uppercase">Monthly Favourites</h2>
+                                <hr class="content-divider">
+                            </div>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>Origin</th>
+                                    </thead>
+                                </tr>
+                                <tr>
+                                    <tbody>
+                                        <td>Jim Beam</td>
+                                        <td>Masachusetts</td>
+                                </tr>
+                                <tr>
+                                    <td>Jack Daniels</td>
+                                    <td>Tenessee</td>
+                                </tr>
+                                <tr>
+                                    <td>Auchentoshan</td>
+                                    <td>Scotland</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamesons</td>
+                                    <td>Ireland</td>
+                                </tr>
+                                <tr>
+                                    <td>Bells</td>
+                                    <td>Germany</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <table class="table table-bordered table-striped">
-                            <tr>
-                                <thead>
-                                    <th>Name</th>
-                                    <th>Origin</th>
-                                </thead>
-                            </tr>
-                            <tr>
-                                <tbody>
-                                    <td>Jim Beam</td>
-                                    <td>Masachusetts</td>
-                            </tr>
-                            <tr>
-                                <td>Jack Daniels</td>
-                                <td>Tenessee</td>
-                            </tr>
-                            <tr>
-                                <td>Auchentoshan</td>
-                                <td>Scotland</td>
-                            </tr>
-                            <tr>
-                                <td>Jamesons</td>
-                                <td>Ireland</td>
-                            </tr>
-                            <tr>
-                                <td>Bells</td>
-                                <td>Germany</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </div>

@@ -8,13 +8,18 @@
     align-items: center;
 }
 
+.photo {
+    width: 10vw;
+    height: 10vw;
+    border: 2px solid #d3d3d3;
+}
+
 .img-transparent {
     background: transparent;
     color: white;
 }
 
 .hr-orange {
-    color: green;
     background-color: #a76b24;
     height: 3px;
     width: 25vw;
@@ -43,6 +48,11 @@
 
 /* navbar styling*/
 
+.navbar-header i {
+    font-weight: bold;
+    color: white;
+}
+
 .navbar-default .navbar-toggle {
     border: 0;
 }
@@ -56,10 +66,9 @@
     border: 0;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav li a {
     font-weight: bold;
     color: white;
-    line-height: 10px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -67,20 +76,118 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar:hover {
-    background-color: grey;
+    background-color: #5e5e5e;
 }
 
 .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color:grey;
+    background-color: #5e5e5e;
 }
+
+/* button styling*/
+
+.btn-success {
+    background-color: #d28b0b;
+    border-color: #5e5e5e;
+    border-radius: 15px;
+}
+
+.btn-success:hover {
+    background-color: orange;
+    border-color: #5e5e5e;
+}
+
+.btn-success:active:focus {
+    background-color: #d28b0b;
+    border-color: #5e5e5e;
+}
+
+.btn-success:active:hover {
+    background-color: #d28b0b;
+    border-color: #5e5e5e;
+}
+
+.btn-success:active {
+    background-color: #d28b0b;
+    border-color: #5e5e5e;
+}
+
+.btn-success:focus {
+    background-color: #d28b0b;
+    border-color: #5e5e5e;
+}
+
+p .btn-lg {
+    border-radius: 35px;
+}
+
+/* banner styling */
+
+.col-xs-12 .alert {
+    padding: 2px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.alert-container article div .col-xs-12 {
+    padding: 0;
+}
+
+.alert-warning {
+    color: #6d5223;
+    background-color: #dac452;
+    border-color: #dac452;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav li a {
+        line-height: 10px;
+    }
+}
+
+/* content */
+
+h2 {
+    text-align: center;
+}
+
+.content-divider {
+    border: 0;
+    height: 5px;
+    width: 40px;
+    background-color: black;
+}
+
+.page-header {
+    border: 0;
+}
+
+.container-wrapper {
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+
+.cnt-orng {
+  background-color: #d28b0b;
+  width: 100%;
+}
+
+.table-bordered {
+    background-color: #ecc57d;
+}
+
+
+
+
+
 
 
 
