@@ -6,6 +6,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    z-index: -2;
 }
 
 .photo {
@@ -145,6 +146,7 @@ p .btn-lg {
     color: #6d5223;
     background-color: #dac452;
     border-color: #dac452;
+    text-align: left;
 }
 
 @media (max-width: 767px) {
@@ -178,17 +180,31 @@ h2 {
 .cnt-orng {
   background-color: #d28b0b;
   width: 100%;
+  color: white;
 }
 
 .table-bordered {
     background-color: #ecc57d;
 }
 
+.hr-white {
+    background-color: white;
+}
 
+.features h3 .glyphicon {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 28px;
+}
 
+.features {
+    text-align: center;
+    padding-bottom: 12px;
+}
 
-
-
+.btn-sm {
+    border-radius: 15px;
+}
 
 
 
